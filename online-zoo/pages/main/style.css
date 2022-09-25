@@ -4,7 +4,7 @@
 
 :root {
   --green: #4B9200;
-  --orange: #F9804B;
+  --orange: #FE9013;
   --yellow: #FFEE2E;
   --rad: #D31414;
   --black_blue: #333B41;
@@ -25,10 +25,12 @@ a {
 .button {
   width: 298px;
   height: 54px;
-  background: linear-gradient(to right, #F9804B, #FE9013);
+  background: linear-gradient(113.96deg, #F9804B, #FE9013);
   border: none;
   border-radius: 25px;
   cursor: pointer;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
 .button:active, .pets-content__arrow:active {
@@ -162,7 +164,7 @@ a {
   width: 62px;
   height: 62px;
   border-radius: 50%;
-  background: linear-gradient(to right, #F9804B, #FE9013);
+  background: linear-gradient(113.96deg, #F9804B, #FE9013);
   cursor: pointer;
 }
 
@@ -224,4 +226,130 @@ a {
 .card-description__name, .card-description__native {
   margin: 5px;
   padding-left: 10px;
+}
+
+.pets__btn {
+  display: block;
+  margin: 80px auto 100px;
+  background: var(--orange);
+}
+
+.pets__flower-left {
+  position: absolute;
+  width: 292px;
+  height: 460px;
+  left: 0;
+  bottom: -100px;
+  background: url(../../assets/images/palm_foto.png);
+}
+
+.pets__flower-right {
+  position: absolute;
+  width: 368px;
+  height: 275px;
+  right: 0;
+  bottom: -100px;
+  background: url(../../assets/images/strelitzia.png);
+}
+
+
+      /* Pick and feed a friend */
+
+
+.pick {
+  width: 100%;
+  background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+  opacity: 0.9;
+  padding: 69px 0 100px;
+}
+
+.pick-content {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 30px 0 50px;
+  background: rgba(253, 253, 255, 0.52);
+  backdrop-filter: blur(2px);
+  border-radius: 20px;
+  color: var(--black_blue);
+}
+
+.pick-content__title {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 120%;
+  text-align: center;
+  color: var(--orange);
+}
+
+.pick-content__animal {
+  padding-left: 50px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;  
+}
+
+.pick-content__covid { 
+  padding-left: 50px; 
+  line-height: 130%;
+}
+
+.pick-content__support {
+  padding-left: 50px;
+  font-weight: 400;
+  line-height: 130%;
+}
+
+.pick-content__support > a {
+  color: var(--black_blue);
+  border-bottom: 1px solid var(--orange);
+}
+
+.pick-content__howwork {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 130%;
+  text-align: center;
+}
+
+.pick-howwork {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.pick-content-cards {
+  width: 168px;
+  height: 244px;
+}
+
+.pick-content__arrow {
+  width: 69px;
+  height: 35px;
+  margin-top: 67px;
+  background: url(../../assets/images/Vector-pick.png);
+}
+
+.pick-content-cards__card {
+  width: 100%;
+  height: 168px;
+  border: 1px solid var(--orange);
+  border-radius: 5px;
+  background: #ffffff center no-repeat;  
+}
+
+.card-pay {
+  background-image: url(../../assets/images/pay.png);
+}
+
+.card-zoo {
+  background-image: url(../../assets/images/zoo.png);
+}
+
+.card-monkey {
+  background-image: url(../../assets/images/monkey.png);
+}
+
+.pick__btn {
+  display: block;
+  margin: 70px auto 0;
 }
