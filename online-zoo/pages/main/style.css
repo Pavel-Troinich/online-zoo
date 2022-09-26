@@ -48,6 +48,8 @@ ul {
   background: var(--hover);
 }
 
+      /* Header */
+
 .header {
   height: 780px;
   background: center/cover url(../../assets/images/Giant_Panda.png);

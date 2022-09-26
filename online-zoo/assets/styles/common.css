@@ -1,0 +1,45 @@
+:root {
+  --green: #4B9200;
+  --orange: #FE9013;
+  --yellow: #FFEE2E;
+  --rad: #D31414;
+  --black_blue: #333B41;
+  --black: #000000;
+  --hover: #E47209;
+  --gray_light: #F1F3F2;
+}
+
+body {
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none; 
+}
+
+ul {
+  list-style: none;
+}
+
+.button {
+  width: 298px;
+  height: 54px;
+  background: linear-gradient(113.96deg, #F9804B, #FE9013);
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.button:active, .pets-content__arrow:active {
+  transform: scale(0.95);
+  background: var(--green) !important;
+}
+
+.button:hover, .pets-content__arrow:hover {
+  background: var(--hover);
+}
