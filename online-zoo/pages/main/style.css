@@ -247,7 +247,23 @@ ul {
   width: 366px;
   height: 426px;
   border: 1px solid var(--orange);
-  border-radius: 5px;  
+  border-radius: 5px;    
+}
+
+.pet-cards__card:hover .card__img {
+  border-radius: 5px;
+  transform: scale(1.07);  
+}
+
+.pet-cards__card:hover .card-description {
+  transform: translateY(-49px) scale(1.07);
+  background: rgb(0, 0, 0, 0.5);
+  color: #ffffff;
+  
+}
+
+.card__img {  
+  transition: transform 0.5s ease;
 }
 
 .card-description {
@@ -255,6 +271,7 @@ ul {
   justify-content: space-between;  
   align-items: center;
   height: 60px;
+  transition: transform 0.5s ease;
 }
 
 .card-description__name {
