@@ -43,3 +43,11 @@ ul {
 .button:hover, .pets-content__arrow:hover {
   background: var(--hover);
 }
+
+.links__item:hover {
+  color: var(--hover);
+}
+
+.activ_links {
+  color: var(--hover);
+}

@@ -26,6 +26,14 @@
   padding: 0;
 }
 
+.social_item:hover svg circle {
+  fill: var(--green);
+}
+
+.social_item:hover {
+  color: var(--green);
+}
+
 .social {
   display: inline-block;
   height: 30px;
@@ -86,6 +94,8 @@
 
 .footer__submit:active {
   transform: scale(0.95);
+  color: var(--green);
+  border-color: var(--green)
 }
 
 .footer__email:valid {
