@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 @import url(../../assets/styles/normalize.css);
 
 
@@ -8,7 +8,9 @@
   --yellow: #FFEE2E;
   --rad: #D31414;
   --black_blue: #333B41;
+  --black: #000000;
   --hover: #E47209;
+  --gray_light: #F1F3F2;
 }
 
 body {
@@ -20,6 +22,10 @@ body {
 a {
   color: #ffffff;
   text-decoration: none; 
+}
+
+ul {
+  list-style: none;
 }
 
 .button {
@@ -82,8 +88,7 @@ a {
 .header-links {
   display: flex;
   justify-content: flex-start;
-  width: 60%;
-  list-style: none;
+  width: 60%;  
 }
 
 .header-links__item {
@@ -171,13 +176,13 @@ a {
 .pets-prev {
   position: absolute;
   top: 404px;
-  left: 10px;
+  left: -82px;
 }
 
 .pets-next {
   position: absolute;
   top: 404px;
-  left: 1270px;
+  right: -82px;
 }
 
 .img-arrow {
@@ -197,6 +202,7 @@ a {
   height: 872px;
   margin: 0 auto;
   gap: 20px 30px;
+  position: relative;
 }
 
 .pet-cards__card {
@@ -352,4 +358,211 @@ a {
 .pick__btn {
   display: block;
   margin: 70px auto 0;
+}
+
+    /* Testimonials */
+
+.testimonials {
+  width: 100%;
+  position: relative;
+}
+
+.testimonials-wrapper {
+  width: 1160px;
+  height: 919px;
+  margin: 0 auto;
+  padding-top: 140px;
+  color: var(--black_blue);
+}
+
+.testimonials__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 130%;
+  text-align: center;
+}
+
+.testimonials-content {
+  display: flex;
+  gap: 30px;
+  
+}
+
+.testimonials-card {
+  width: 268px;
+  height: 391px;
+  background: #F1F3F2;
+  border: 2px solid #E0D8F0;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 15px;
+}
+
+.testimonials-card__title {
+  display: flex;
+}
+
+.testimonials-card__icon {
+  display: block;
+  width: 37px;
+  height: 37px;
+}
+
+.testimonials-card__name {
+  margin: 0;
+  padding-left: 10px;
+  font-weight: 400;
+  line-height: 120%;
+  color: var(--black);
+}
+
+.testimonials-card__info {
+  margin: 0;
+  padding-left: 10px;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 120%;
+  color: #BDBDBD;
+}
+
+.testimonials-content__card__text {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 120%;
+  color: #767474;
+}
+
+.testimonials-bar  {
+  margin: 0 auto;
+  width: 600px;
+  padding-top: 20px;
+}
+
+input[type=range] {
+  width: 600px;
+  height: 8px;
+  appearance: none;
+  border: 1px solid #F5F7F6;
+  border-radius: 4px;
+}
+
+.second-btn {
+  border-radius: 5px;
+  margin-top: 31px;
+  display: block;
+}
+
+.testimonials__flower {
+  position: absolute;
+  right: 0;
+  bottom: -130px;
+  z-index: -1;
+  width: 247px;
+  height: 408px;
+  background: url(../../assets/images/leav_foto.png);
+}
+
+    /* Footer */
+
+.footer {
+  width: 100%;
+  height: 443px;
+  background: #111115;
+  color: #ffffff;
+}
+
+.footer ul {
+  list-style: none;
+
+}
+
+.footer-wrapper {
+  width: 1160px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+
+.footer-first > .second-btn {
+  margin: 68px 0 44px;
+}
+
+.footer-first__social {
+  padding: 0;
+}
+
+.social {
+  display: inline-block;
+  height: 35px;
+  vertical-align: middle;
+  padding-left: 12px; 
+}
+
+.footer-second {
+  display: flex;  
+  align-items: flex-end;
+}
+
+.footer-second__nav {
+  display: flex;
+  gap: 58px;
+  padding-bottom: 20px;
+}
+
+.footer-third {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-third__subscribe p {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;  
+}
+
+.footer__email {
+  width: 228px;
+  height: 42px;
+  background: transparent;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid var(--orange);
+  border-radius: 5px;
+  color: #ffffff;
+}
+
+.footer__email::placeholder {
+  color: #ffffff;
+}
+
+.footer__submit {
+  width: 129px;
+  height: 42px;
+  background: var(--gray_light);
+  border: 1px solid var(--rad);
+  border-radius: 5px;
+  color: var(--rad);
+  cursor: pointer;
+}
+
+.footer__submit:active {
+  transform: scale(0.95);
+}
+
+.footer__email:valid {
+  border-color: var(--green)
+}
+
+.footer__email:valid + .footer__submit {
+  color: var(--black);
+  border-color: var(--black_blue);
+}
+
+.footer-third__copyright {
+  font-weight: 100;
+  line-height: 130%;
+  text-align: right;
+  padding-bottom: 20px;
 }
