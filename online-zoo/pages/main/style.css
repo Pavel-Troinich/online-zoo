@@ -80,7 +80,7 @@ ul {
   font-size: 19px;
   font-weight: 400;
   text-align: center;
-  padding: 0 5px;
+  padding: 5px;
   border: 1px solid #ffffff;
   border-radius: 2px;
 }
@@ -88,12 +88,8 @@ ul {
 .header-links {
   display: flex;
   justify-content: flex-start;
-  width: 60%;  
-}
-
-.header-links__item {
-  width: 20%;
-  
+  gap: 58px;
+  width: 80%;  
 }
 
 .header-content__wrapper {
@@ -117,6 +113,10 @@ ul {
   background: url(../../assets/images/watch_your.png);
 }
 
+.header-content__btn {
+  margin-left: 77px;
+}
+
         /* BackStage */
 
 .backstage {
@@ -130,7 +130,7 @@ ul {
   justify-content: space-between;
   width: 1160px;
   height: 403px;
-  margin: 150px auto;  
+  margin: 140px auto 160px;  
 }
 
 .backstage-content__img {
@@ -150,8 +150,32 @@ ul {
   height: 605px;
   background: url(../../assets/images/flower_1.png);
   position: absolute;
-  right: -100px;
+  right: -90px;
   top: 12px;
+}
+
+.backstage-content__text-title {
+  margin: 0 0 22px;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 120%;
+}
+
+.backstage-content__text-first {
+  font-weight: 400;
+  line-height: 130%;
+}
+
+.backstage-content__text-subtitle {
+  margin: 54px 0 34px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+}
+
+.backstage-content__text-second {
+  font-weight: 400;
+  line-height: 140%;
 }
 
     /* Pets */
@@ -162,6 +186,7 @@ ul {
 
 .pets-content {
   position: relative;
+  
 }
 
 .pets-content__arrow {
@@ -182,7 +207,7 @@ ul {
 .pets-next {
   position: absolute;
   top: 404px;
-  right: -82px;
+  right: -80px;
 }
 
 .img-arrow {
@@ -200,7 +225,7 @@ ul {
   flex-wrap: wrap;
   width: 1160px;
   height: 872px;
-  margin: 0 auto;
+  margin: 20px auto;
   gap: 20px 30px;
   position: relative;
 }
@@ -227,11 +252,16 @@ ul {
 
 .card-description__native {
   font-weight: 300;
+  font-size: 15px;
 }
 
 .card-description__name, .card-description__native {
-  margin: 5px;
+  margin: 0 5px;
   padding-left: 10px;
+}
+
+.card-description__food {
+  padding-right: 9px;
 }
 
 .pets__btn {
@@ -271,8 +301,9 @@ ul {
 
 .pick-content {
   width: 1160px;
+  height: 835px;
   margin: 0 auto;
-  padding: 30px 0 50px;
+  padding: 30px 0 50px ;
   background: rgba(253, 253, 255, 0.52);
   backdrop-filter: blur(2px);
   border-radius: 20px;
@@ -280,6 +311,8 @@ ul {
 }
 
 .pick-content__title {
+  margin-top: 10px;
+  margin-bottom: 33px;
   font-weight: 400;
   font-size: 48px;
   line-height: 120%;
@@ -287,20 +320,23 @@ ul {
   color: var(--orange);
 }
 
-.pick-content__animal {
-  padding-left: 50px;
+.pick-content__animal {  
+  padding-left: 100px;
+  margin-bottom: 40px;
   font-weight: 400;
   font-size: 24px;
   line-height: 120%;  
 }
 
 .pick-content__covid { 
-  padding-left: 50px; 
+  margin: 10px 0;
+  padding-left: 100px; 
   line-height: 130%;
 }
 
 .pick-content__support {
-  padding-left: 50px;
+  margin: 10px 0;
+  padding-left: 100px;
   font-weight: 400;
   line-height: 130%;
 }
@@ -311,6 +347,7 @@ ul {
 }
 
 .pick-content__howwork {
+  margin: 60px 0 40px;
   font-weight: 400;
   font-size: 36px;
   line-height: 130%;
@@ -326,21 +363,24 @@ ul {
 .pick-content-cards {
   width: 168px;
   height: 244px;
+  font-weight: 400;  
+  line-height: 140%;
 }
 
 .pick-content__arrow {
   width: 69px;
   height: 35px;
-  margin-top: 67px;
+  margin-top: 60px;
   background: url(../../assets/images/Vector-pick.png);
 }
 
 .pick-content-cards__card {
   width: 100%;
   height: 168px;
+  margin-bottom: 30px;
   border: 1px solid var(--orange);
   border-radius: 5px;
-  background: #ffffff center no-repeat;  
+  background: #ffffff center no-repeat;   
 }
 
 .card-pay {
@@ -357,7 +397,7 @@ ul {
 
 .pick__btn {
   display: block;
-  margin: 70px auto 0;
+  margin: 60px auto 0;
 }
 
     /* Testimonials */
@@ -371,11 +411,12 @@ ul {
   width: 1160px;
   height: 919px;
   margin: 0 auto;
-  padding-top: 140px;
+  padding-top: 104px;
   color: var(--black_blue);
 }
 
 .testimonials__title {
+  margin-bottom: 47px;
   font-weight: 400;
   font-size: 36px;
   line-height: 130%;
@@ -427,6 +468,7 @@ ul {
 
 .testimonials-content__card__text {
   font-weight: 300;
+  margin-top: 10px;
   font-size: 15px;
   line-height: 120%;
   color: #767474;
@@ -450,6 +492,10 @@ input[type=range] {
   border-radius: 5px;
   margin-top: 31px;
   display: block;
+}
+
+.testimonials__btn {
+  margin-top: 22px; 
 }
 
 .testimonials__flower {
@@ -485,7 +531,7 @@ input[type=range] {
 }
 
 .footer-first > .second-btn {
-  margin: 68px 0 44px;
+  margin: 63px 0 44px;
 }
 
 .footer-first__social {
@@ -494,7 +540,7 @@ input[type=range] {
 
 .social {
   display: inline-block;
-  height: 35px;
+  height: 30px;
   vertical-align: middle;
   padding-left: 12px; 
 }
@@ -507,7 +553,8 @@ input[type=range] {
 .footer-second__nav {
   display: flex;
   gap: 58px;
-  padding-bottom: 20px;
+  padding: 0 0 15px 70px;
+  font-weight: 400;
 }
 
 .footer-third {
@@ -517,6 +564,8 @@ input[type=range] {
 }
 
 .footer-third__subscribe p {
+  margin-top: 0;
+  margin-bottom: 14px;
   font-weight: 400;
   font-size: 24px;
   line-height: 120%;  
@@ -529,7 +578,7 @@ input[type=range] {
   padding: 10px;
   margin-right: 10px;
   border: 1px solid var(--orange);
-  border-radius: 5px;
+  border-radius: 3px;
   color: #ffffff;
 }
 
@@ -565,4 +614,8 @@ input[type=range] {
   line-height: 130%;
   text-align: right;
   padding-bottom: 20px;
+}
+
+.footer-third__copyright p {
+  margin: 10px 0;
 }
