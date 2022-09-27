@@ -504,9 +504,14 @@ ul {
 
 .testimonials-bar  {
   margin: 0 auto;
+  cursor: pointer;
   width: 600px;
   padding: 12px 0 8px;
 
+}
+
+.testimonials-bar:hover{
+  transform: scaleY(1.5);
 }
 
 input[type=range] {
