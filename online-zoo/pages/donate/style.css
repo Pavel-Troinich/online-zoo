@@ -5,7 +5,7 @@
 @import url(../../assets/styles/footer.css);
 
 .header {
-  height: 406px;
+  height: 466px;
   width: 100%;
   background: center/cover url(../../assets/images/panda_bg.jpg);
 }
@@ -14,7 +14,7 @@
 
 .pick {
   width: 100%;
-  height: 1428px;
+  height: 1482px;
   background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
 }
 
@@ -32,13 +32,16 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 130%;
+  margin: 0;
 }
 
 .pick-describe p {
   line-height: 140%;
+  margin-top: 10px;
 }
 
 .pick-describe__subtitle {
+  margin: 45px 0 60px;
   font-weight: 400;
   font-size: 36px;
   line-height: 130%;
@@ -47,7 +50,7 @@
 
 .pick-feed {
   width: 100%;
-  height: 976px;
+  height: 964px;
   padding: 40px 92px 62px;
   background: rgba(253, 253, 255, 0.52);
   backdrop-filter: blur(2px);
@@ -56,6 +59,8 @@
 }
 
 .pick-feed__title {
+  margin: 0;
+  padding-right: 10px ;
   font-weight: 400;
   font-size: 48px;
   line-height: 120%;
@@ -63,25 +68,27 @@
   text-align: center;
 }
 
-.pick-feed p {
+.pick-feed > p {
+  margin-top: 20px;
   font-weight: 400;
   font-size: 24px;
   line-height: 120%;
 }
 
 .count-animal {
-  width: 510px;
+  width: 540px;
   display: flex;
-  margin: 0 auto;
+  margin: 60px auto 40px;  
   text-align: center;
 }
 
 .count-animal__count {
   height: 246px;
+  
 }
 
 .count-animal__digit {
-  margin: 100px 0 11px;
+  margin: 105px 0 0;
   font-size: 72px;
   line-height: 80%;  
   text-transform: uppercase;
@@ -89,6 +96,7 @@
 }
 
 .count-animal__text {
+  margin-top: 12px;
   width: 159px;
   font-weight: 400;
   line-height: 140%;  
@@ -97,15 +105,15 @@
 .count-animal__multi {
   width: 14px;
   height: 14px;
-  margin-top: 120px;
-  margin-right: 64px;
+  margin: 130px 64px 0 5px;  
   background: url(../../assets/icons/x_icon.png);
   background-repeat: no-repeat;
 }
 
 .count-animal__animal {
-  width: 284px;
-  height: 246px;
+  
+  width: 280px;
+  height: 246px;  
   background: url(../../assets/images/panda_widget.png);
 }
 
@@ -118,10 +126,11 @@
 }
 
 .pay__title {
-  color: black;
+  color: var(--black);
   line-height: 140%;
-  padding-left: 17px;
-  margin-bottom: 4px;
+  padding-left: 4px;  
+  font-weight: 400;  
+  line-height: 140%;
 }
 
 .pay__line-block {
@@ -195,8 +204,7 @@
 .pay__cost {
   font-size: 1.625rem;
   color: #333B41;
-  line-height: 140%;
-  padding-left: 3px;
+  line-height: 140%;  
 }
 
 .pay__line {
@@ -239,7 +247,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding-left: 19px;
+  padding-left: 8px;
 }
 
 .feed__input {  
@@ -290,7 +298,7 @@ input[type="number"] {
   align-self: start;
   padding-left: 38px;
   gap: 40px;
-  margin-bottom: 33px;
+  margin-bottom: 30px;
 }
 
 .radio-container label {
@@ -306,7 +314,7 @@ input[type="number"] {
   border: 1px solid #FE9013;
   border-radius: 50%;
   vertical-align: text-top;
-  margin-right: 10px;
+  margin-right: 8px;
   cursor: pointer;
 }
 
@@ -337,9 +345,13 @@ input[type="number"] {
 }
 
 .feed__share {
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 140%;  
-  padding-left: 9px;
+  font-weight: 300;
+  line-height: 140%;    
   margin-top: 30px;
+}
+
+.second-btn {
+  border-radius: 5px;
+  margin-top: 31px;
+  display: block;
 }

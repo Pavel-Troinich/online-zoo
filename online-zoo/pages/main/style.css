@@ -505,7 +505,8 @@ ul {
 .testimonials-bar  {
   margin: 0 auto;
   width: 600px;
-  padding-top: 20px;
+  padding: 12px 0 8px;
+
 }
 
 input[type=range] {
