@@ -171,6 +171,10 @@
   background-color: var(--yellow);
 }
 
+.pay__dot:hover .pay__inner-dot{
+  transform: scale(1.5);
+}
+
 .pay__dot.active .pay__inner-dot:after {
   position: absolute;
   transform: translate(-2%, -1%);
