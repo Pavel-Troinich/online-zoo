@@ -1,0 +1,20 @@
+@media (max-width: 1000px) {
+  
+  .header {
+    height: 584px;    
+  }
+
+  .header-links {
+    gap: 48px;
+    padding-left: 60px;
+  }
+
+  .header-content__promo {
+    width: 458px;
+    height: 374px;
+    margin: 12px 0 60px;
+    background: url(../../assets/images/watch_your_small.png);
+  }
+
+}
+

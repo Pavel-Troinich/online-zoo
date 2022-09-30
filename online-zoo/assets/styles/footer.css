@@ -119,3 +119,28 @@
 .footer-third__copyright p {
   margin: 10px 0;
 }
+
+
+@media (max-width: 1220px) {
+
+  .footer-wrapper {
+    width: 940px;
+    position: relative;
+  }
+
+  .footer-second__nav {
+    position: absolute;
+    left: 290px;
+    width: 332px;
+    gap: 48px;
+    padding: 0 0 15px 0;
+  }
+
+  .footer__email {
+    margin-right: 5px;
+  }
+
+  .footer__submit{
+    margin-right: 32px;
+  }
+}
