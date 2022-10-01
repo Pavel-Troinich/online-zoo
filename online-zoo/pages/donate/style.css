@@ -60,7 +60,7 @@
 
 .pick-feed__title {
   margin: 0;
-  padding-right: 10px ;
+  padding-right: 10px;
   font-weight: 400;
   font-size: 48px;
   line-height: 120%;
@@ -145,7 +145,7 @@
 .pay__point {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: flex-end;
   align-items: center;
   width: 88px;
   z-index: 4;
@@ -358,4 +358,97 @@ input[type="number"] {
   border-radius: 5px;
   margin-top: 31px;
   display: block;
+}
+
+
+@media (max-width: 1220px) {
+
+  .header {
+    height: 470px;
+    background: url(../../assets/images/panda_bg_small.png);
+    background-position: center 80px;
+  }
+
+  .pick {
+    height: 1333px;
+  }
+
+  .pick__wrapper {
+    width: 940px;
+  }
+
+  .pick-describe__title {
+    padding-right: 100px;
+    margin-bottom: 32px;
+  }
+
+  .pick-describe__subtitle {
+    margin-bottom: 39px;
+  }
+
+  .pick-feed {
+    height: 918px;
+    padding: 20px 35px 0;
+  }
+
+  .pick-feed__title {
+    padding-right: 13px ;
+  }
+
+  .pick-feed > p {
+    margin-top: 10px;
+    padding-left: 12px;
+  }
+
+  .count-animal {
+    margin-bottom: 38px;
+  }
+
+  .count-animal__count {
+    margin: 0 4px 0 -4px;
+  }
+
+  .pay__title {
+    padding-left: 30px;
+    transform: translateY(10px);
+  }
+
+  .pay__line-block {
+    margin-left: 3px;
+    gap: 40px;
+  }
+
+  .pay__line {
+    width: 810px;
+    margin-left: 30px;
+  }
+
+  .pay__line:after {
+    width: 785px;
+    left: 11px;
+  }
+
+  .point__hidden {
+    display: none;
+  }
+
+  .feed__form form {
+    padding-left: 5px;
+  }
+
+  .feed__form:after {
+    right: 26px;
+  }
+
+  .feed__input {
+    padding: 10px 9px 18px;
+  }
+
+  .radio-container {
+    gap: 47px;
+  }
+
+  .footer-second__nav {
+    left: 305px;
+  }
 }
