@@ -460,3 +460,74 @@ input[type="number"] {
     left: 305px;
   }
 }
+
+
+@media (max-width: 999px) {
+
+
+  .header {
+    height: 34px;  
+  }
+
+  .header-content__wrapper {
+    height: 336px;
+    background-size: 215%;
+    background-position: 37% 50%;
+  }
+
+
+      /* Pick */
+
+
+  .pick {
+    height: 1333px;
+  }
+
+  .pick__wrapper {
+    width: 600px;
+    padding-top: 30px;
+  }
+
+  .pick-feed {
+    width: 600px;
+    height: 918px;
+    margin: 0 auto;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .pick-describe__title {
+    font-size: 24px;
+    line-height: 120%;
+    padding-right: 0px;
+    margin-bottom: 20px;
+  }
+
+  .pick-describe__subtitle {
+    margin: 28px 0 30px;
+  }
+
+  .pick-feed__title{
+    padding-top: 10px;
+    padding-right: 0px;
+  }
+  .pick-feed > p {
+    margin-top: 20px;
+    padding-left: 0px;
+  }
+
+  .count-animal {
+    margin-top: 50px;
+  }
+
+
+      /* Pay bar */
+
+
+  .pay__line {
+    width: 600px;
+    margin-left: 0px;
+  }
+  
+  
+}
