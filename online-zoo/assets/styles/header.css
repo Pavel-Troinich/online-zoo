@@ -1,6 +1,6 @@
 .header {
-  height: 780px;
-  background: center/cover url(../../assets/images/Giant_Panda.png);
+  height: 80px;
+  
 }
 
 .header-nav__wrapper {
@@ -42,6 +42,14 @@
   width: 80%;  
 }
 
+.header__burger {
+  display: none;
+  width: 18px;
+  height: 10px;
+  margin-bottom: 8px;
+  background: url(../../assets/icons/burger_menu.svg);
+}
+
 @media (max-width: 1220px) {
 
   .header-links {
@@ -51,5 +59,44 @@
 
   .header-nav {
     max-width: 1000px;
+  }
+}
+
+@media (max-width: 999px) {
+
+  .header-logo__title {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    border: none;
+    padding: 0;
+    margin-top: 5px;
+  }
+
+  .header-nav__wrapper {
+    height: 34px;
+    position: absolute;
+    top: 0;
+  }
+
+  .header-nav {
+    width: 640px;
+    padding: 0 20px;
+  }
+
+  .header-logo {
+    background-position: top 10px left 0px;
+  }
+
+  .header-links {
+    display: none;
+  }
+
+  .header-designer {
+    display: none;
+  }
+
+  .header__burger {
+    display: block;    
   }
 }

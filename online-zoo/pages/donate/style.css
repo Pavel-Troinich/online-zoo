@@ -5,9 +5,16 @@
 @import url(../../assets/styles/footer.css);
 
 .header {
-  height: 466px;
-  width: 100%;
-  background: center/cover url(../../assets/images/panda_bg.jpg);
+  height: 80px;
+  width: 100%;  
+}
+
+.header-content__wrapper {
+  height: 386px;
+  margin: 0 auto;    
+  background: url(../../assets/images/panda_bg.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
     /* Pick */
@@ -361,12 +368,13 @@ input[type="number"] {
 }
 
 
-@media (max-width: 1220px) {
+@media (max-width: 1220px) {  
 
-  .header {
-    height: 470px;
-    background: url(../../assets/images/panda_bg_small.png);
-    background-position: center 80px;
+  .header-content__wrapper {
+    max-width: 1600px;
+    height: 390px;
+    background-size: cover;
+    background-position: center;
   }
 
   .pick {
