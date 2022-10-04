@@ -463,7 +463,11 @@ input[type="number"] {
 
 
 @media (max-width: 999px) {
+  
 
+  body {
+    height: 400vh;
+  }
 
   .header {
     height: 34px;  
@@ -517,7 +521,7 @@ input[type="number"] {
   }
 
   .count-animal {
-    margin-top: 50px;
+    margin: 50px auto 20px;
   }
 
 
@@ -528,6 +532,37 @@ input[type="number"] {
     width: 600px;
     margin-left: 0px;
   }
+
+  .pay__title {
+    text-align: left;
+    padding-left: 10px;   
+  }
   
+  .pay__line:after  {
+    width: 524px;
+    left: 40px;
+  }
+
+  .point__hidden__mob {
+    display: none;
+  }
+
+  .pay__line-block {
+    gap: 55px;
+  }
+
+  .feed__input {
+    width: 180px;
+    height: 42px;
+  }
+
+  .footer-second {
+    position: relative;
+  }
+  .footer-second__nav {
+    left: 0;
+    bottom: -102px;
+  }
+
   
 }

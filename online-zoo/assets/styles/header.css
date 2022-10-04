@@ -68,7 +68,7 @@
   .header {
     height: 34px;
     width: 100%;
-    /* position: sticky; */
+    position: sticky;
     top: 0;
     z-index: 5;
   }
@@ -87,7 +87,7 @@
   }
 
   .header-nav {
-    width: 640px;
+    max-width: 640px;
     padding: 0 20px;
   }
 
@@ -105,5 +105,14 @@
 
   .header__burger {
     display: block;    
+  }
+}
+
+
+
+
+@media (max-width: 480px) {
+  .header-nav {
+    padding: 0 10px;    
   }
 }
