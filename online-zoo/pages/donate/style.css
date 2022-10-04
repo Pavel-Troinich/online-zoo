@@ -562,7 +562,35 @@ input[type="number"] {
   .footer-second__nav {
     left: 0;
     bottom: -102px;
+  }  
+}
+
+@media (max-width: 639px) {
+
+  .header-content__wrapper {
+    height: 187px;
+    background-size: 237%;
+    background-position: 33% 50%;
   }
 
-  
+  .pick {
+    height: 1145px;
+  }
+
+  .pick__wrapper {
+    width: 300px;
+    padding-top: 30px;
+  }
+
+  .pick-describe__subtitle {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 100%;
+  }
+
+  .pick-feed {
+    width: 300px;
+    height: 591px;
+  }
+
 }
