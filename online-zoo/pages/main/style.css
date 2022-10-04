@@ -347,6 +347,7 @@
 .testimonials {
   width: 100%;
   position: relative;
+  overflow: hidden;
 }
 
 .testimonials-wrapper {
@@ -670,10 +671,9 @@ input[type=range]::-moz-range-thumb {
 @media (max-width: 999px) {
 
   .header-content__wrapper {
-    height: 339px;
-    background-size: cover;
-    background-position-y: -80px;
-    padding: 0;
+    height: 336px;
+    background-size: 215%;
+    background-position: 37% 50%;
   }
 
   .header-content {
@@ -779,6 +779,10 @@ input[type=range]::-moz-range-thumb {
 
   .card-description__name, .card-description__native {
     padding-left: 8px;
+  }
+
+  .card-description__food img {
+    height: 29px;
   }
 
   .pets__btn {
@@ -900,10 +904,223 @@ input[type=range]::-moz-range-thumb {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 639px) {
   .header-content {
+    flex-direction: column;    
+  }
+
+  .watch {
+    max-width: 320px;
+  }
+
+  .header-content__promo {
+    width: 147px;
+    height: 121px;
+    margin: 22px 10px 65px 0;
+    background-size: cover;
+    align-self: flex-end;
+  }
+
+  .header-content__wrapper {
+    height: 187px;
+    background-size: 120%;
+    background-position: 47% 50%;
+    padding: 0;
+  }
+
+  .backstage {
+    height: 532px;
+  }
+
+  .backstage-content {
+    max-width: 320px;
+    margin-top: 104px;
+  }
+
+  .backstage-content__text-title{
+    font-size: 24px;
+    padding-left: 0;
+    margin: 10px 0 0;
+  }
+
+  .backstage-content__text {
+    padding: 0 10px;
+  }
+
+  .backstage-content__text-first {
+    margin-top: 11px;
+  }
+
+  .backstage-content__text-subtitle {
+    margin: 21px 0 10px;
+    padding-left: 0px;
+  }
+
+  .backstage-content__text-second {
+    margin: 10px 0;
+  }
+
+  .backstage__flower {
+    width: 105px;
+    height: 217px;
+    right: -72px;
+    top: 39px;
+  }
+
+  
+      /* Pets */
+
+  .pets {
+    height: 1521px;
+  }
+
+  .pets-cards {
+    max-width: 285px;
+    height: 1388px;
+    gap: 20px;
+  }
+
+  .pets-prev,
+  .pets-next {
+    display: none;
+  }
+
+  .pets__btn {
+    margin-top: 20px;
+  }
+
+  .pets__flower-left {
+    width: 62px;
+    height: 72px;
+    left: -10px;
+    bottom: -60px; 
+    background-size: cover;   
+  }
+  
+  .pets__flower-right {
+    background: url(../../assets/images/strelitzia_mob.png);
+    width: 68px;
+    height: 71px;
+    right: 0px;
+    bottom: -66px;    
+  }
+
+      /* Pick and feed a friend */
+  
+  .pick {
+    padding: 20px 10px;
+    height: 1082px;
+  }
+
+  .pick-content {
+    max-width: 300px;
+    height: 1042px;
+    text-align: center;
+    padding-bottom: 0px;
+  }
+
+  .pick-content__title {
+    font-size: 24px;
+    margin-top: 12px;
+  }
+
+  .pick-content__animal {
+    padding: 0px;
+    margin-top: 10px;
+    font-size: 18px;
+  }
+
+  .pick-content__covid,
+  .pick-content__support {
+    display: none;
+  } 
+
+  .pick-content__howwork {
+    font-size: 24px;
+    margin: 9px 0 18px;
+  }
+
+  .pick-howwork {
     flex-direction: column;
-    align-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-left: -0px;
+    text-align: left;
+  }
+
+  .pick-content-cards {
+    height: 222px;
+  }
+
+  .pick-content-cards__card {
+    margin-bottom: 0;
+  }
+
+  .pick-content-cards p {
+    margin: 10px 0;
+  }
+
+  .card-monkey {
+    margin-top: 9px;
+  }
+
+  .pick-content__arrow {
+    transform: rotate(86deg);
+  }
+
+  .first-arrow {
+    position: absolute;
+    top: 192px;
+    left: 207px;
+    z-index: 3;
+
+  }
+
+  .second-arrow {
+    position: absolute;
+    top: 440px;
+    left: 207px;
+    z-index: 3;
+  }
+
+  .pick__btn {
+    margin: 48px auto 0;
+  }
+
+
+    /* Testimonials */
+
+
+  .testimonials-wrapper {
+    max-width: 300px;
+    height: 550px;
+    padding-top: 0px;
+  }
+
+  .testimonials__title {
+    font-size: 24px;
+    margin: 30px 0 18px;
+  }
+
+  .testimonials-card {
+    padding: 10px 15px;
+  }
+
+  .testimonials-card__name,
+  .testimonials-card__info {
+    padding-left: 5px;
+  }
+
+  .testimonials__btn {
+    margin: 30px auto; 
+  }
+
+  .testimonials__flower {
+    width: 61px;
+    height: 86px;
+    transform: rotate(-15deg);
+    bottom: -25px;
+    right: -5px;
   }
 }
 

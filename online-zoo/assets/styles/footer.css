@@ -10,6 +10,10 @@
 
 }
 
+.logo_mob {
+  display: none;
+}
+
 .footer-wrapper {
   width: 1160px;
   margin: 0 auto;
@@ -196,3 +200,60 @@
     padding-top: 13px;
   }
 } 
+
+
+@media (max-width: 480px) {
+
+  .footer {
+    height: 334px;
+  }
+
+  .footer-wrapper {
+    padding: 18px 0 0;
+    max-width: 300px;
+    height: 334px;
+  }
+
+  .logo_main {
+    display: none;
+  }
+
+  .logo_mob {
+    display: block;
+  }
+
+  .logo_mob img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .footer-btn > .second-btn {
+    margin: 87px auto 0;
+  }
+  
+
+  .footer-first {
+    position: relative;
+    width: 3 
+  }
+
+  .footer-first__social {
+    position: absolute;
+    flex-direction: row;
+    gap: 30px;
+    top: 57px;
+    left: 52px;
+  }
+
+  .footer-third__copyright {
+    font-size: 14.6px;
+    margin-bottom: 61px;
+  }
+
+  .footer-second__nav {
+    font-weight: 400;
+    gap: 30px;
+    left: 11px;
+    bottom: -10px;
+  }
+}
