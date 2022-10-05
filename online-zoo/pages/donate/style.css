@@ -117,8 +117,7 @@
   background-repeat: no-repeat;
 }
 
-.count-animal__animal {
-  
+.count-animal__animal {  
   width: 280px;
   height: 246px;  
   background: url(../../assets/images/panda_widget.png);
@@ -511,7 +510,7 @@ input[type="number"] {
     margin: 28px 0 30px;
   }
 
-  .pick-feed__title{
+  .pick-feed__title {
     padding-top: 10px;
     padding-right: 0px;
   }
@@ -577,6 +576,10 @@ input[type="number"] {
     height: 1145px;
   }
 
+  .pick-pay {
+    margin-bottom: 28px;
+  }
+
   .pick__wrapper {
     width: 300px;
     padding-top: 30px;
@@ -586,6 +589,7 @@ input[type="number"] {
     font-size: 24px;
     font-weight: 400;
     line-height: 100%;
+    margin-bottom: 32px;
   }
 
   .pick-feed {
@@ -593,4 +597,112 @@ input[type="number"] {
     height: 591px;
   }
 
+  .pick-feed__title {
+    font-size: 24px;
+    padding-top: 0;
+  }
+
+  .pick-feed > p {
+    font-size: 16px;
+    margin: 10px 0;
+    line-height: 140%;
+  }
+
+  .count-animal {
+    width: 300px;
+    height: 139px;
+    margin: 0;
+    padding-left: 5px;
+  }
+
+  .count-animal__count {
+    width: 86px;
+    height: 139px;
+    margin-right: 0;
+  }
+
+  .count-animal__digit {
+    font-size: 40.6px;
+    margin-top: 60px;
+    padding-left: 4px;
+  }
+
+  .count-animal__text {
+    font-size: 9px;
+    width: 90px;
+    margin-top: 7px;
+  }
+
+  .count-animal__animal{
+    width: 160px;
+    height: 139px; 
+    background-size: cover;
+    margin-left: 35px;
+  }
+
+  .count-animal__multi {
+    width: 8px;
+    height: 8px;
+    margin: 72px 0px 0 9px;
+    background-size: cover;
+  }
+
+
+      /* Pay bar */
+
+
+  .pay__line {
+    width: 300px;   
+    height: 13.5px; 
+    top: 40px;
+  }
+
+  .pay__title {
+    padding-left: 0px;   
+    margin-top: -5px;
+  }
+  
+
+  .pay__line:after  {
+    width: 262px;
+    height: 1px;
+    top: 6px;
+    left: 19px;
+  }
+
+  .pay__line-block {
+    gap: 27px; 
+    margin: 0;   
+  }
+
+  .pay__cost {
+    font-size: 13px;
+  }
+
+  .pay__dot {
+    width: 30px;
+    height: 30px;
+  }
+
+  .pay__inner-dot {
+    width: 5px;
+    height: 5px;
+    margin-top: 15px;
+  }
+
+  .feed__form::after {
+    right: 68px;
+    top: 10px;
+  }
+
+  .feed__input {
+    padding: 16px 9px;
+  }
+
+  .footer-second__nav {
+    font-weight: 400;
+    gap: 30px;
+    left: 11px;
+    bottom: -155px;
+  }
 }
