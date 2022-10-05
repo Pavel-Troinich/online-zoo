@@ -372,8 +372,8 @@ input[type="number"] {
   .header-content__wrapper {
     max-width: 1600px;
     height: 390px;
-    background-size: cover;
-    background-position: center;
+    background-size: 160%;    
+    background-position: 29% 50%;
   }
 
   .pick {
@@ -465,7 +465,7 @@ input[type="number"] {
   
 
   body {
-    height: 400vh;
+    height: 1990px;
   }
 
   .header {
@@ -474,7 +474,7 @@ input[type="number"] {
 
   .header-content__wrapper {
     height: 336px;
-    background-size: 215%;
+    background-size: 215%;    
     background-position: 37% 50%;
   }
 
@@ -553,6 +553,7 @@ input[type="number"] {
   .feed__input {
     width: 180px;
     height: 42px;
+    margin-bottom: 33px;
   }
 
   .footer-second {
@@ -565,6 +566,10 @@ input[type="number"] {
 }
 
 @media (max-width: 639px) {
+
+  body {
+    height: 1700px;
+  }
 
   .header-content__wrapper {
     height: 187px;
@@ -647,7 +652,7 @@ input[type="number"] {
     background-size: cover;
   }
 
-
+  
       /* Pay bar */
 
 
@@ -697,6 +702,11 @@ input[type="number"] {
 
   .feed__input {
     padding: 16px 9px;
+    margin-bottom: 25px;
+  }
+
+  .feed__form form {
+    padding-left: 0;
   }
 
   .footer-second__nav {

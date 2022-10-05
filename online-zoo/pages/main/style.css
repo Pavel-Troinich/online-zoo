@@ -543,8 +543,8 @@ input[type=range]::-moz-range-thumb {
   .header-content__wrapper {
     max-width: 1600px;
     height: 504px;
-    background-size: cover;
-    background-position-y: -130px;
+    background-size: 120%;
+    background-position: 50% 64%;
   }
 
   .header-content__promo {
@@ -670,14 +670,20 @@ input[type=range]::-moz-range-thumb {
 
 @media (max-width: 999px) {
 
+  body {
+    height: 3580px;
+  }
+
   .header-content__wrapper {
+    padding: 0;
     height: 336px;
-    background-size: 215%;
-    background-position: 37% 50%;
+    background-size: 120%;
+    background-position: 50% 60%;
   }
 
   .header-content {
     flex-direction: row-reverse;
+    padding-left: 20px;
   }
 
   .header-content__promo {
@@ -905,6 +911,11 @@ input[type=range]::-moz-range-thumb {
 }
 
 @media (max-width: 639px) {
+
+  body {
+    height: 4270px;
+  }
+
   .header-content {
     flex-direction: column;    
   }
