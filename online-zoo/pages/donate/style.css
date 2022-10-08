@@ -270,7 +270,7 @@
   padding: 16px 9px;
   margin-left: -5px;
   margin-bottom: 25px;
-
+  color: var(--black_blue);
   font-size: 1.25rem;
 }
 .feed__input:invalid {
@@ -672,6 +672,23 @@ input[type="number"] {
     margin-top: -5px;
   }
   
+  .pay__dot.active .pay__inner-dot:after {    
+    transform: translate(4%, 2%);
+    top: -4px;
+    left: -4px;
+    width: 12px;
+    height: 12px;
+    border: 1px solid var(--orange);
+  }
+  
+  .pay__dot.active .pay__inner-dot:before {
+    transform: translate(-5%, -5%);
+    top: -6px;
+    left: -6px;
+    width: 19px;
+    height: 19px;
+    border: 1px solid var(--orange);    
+  }
 
   .pay__line:after  {
     width: 262px;

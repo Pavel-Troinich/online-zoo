@@ -25,3 +25,36 @@ function closeBurger() {
   shadow.removeEventListener('click', closeBurger);
 }
 
+// Amount
+
+const dotsCollection = document.querySelectorAll('.pay__point');
+const inputAmount = document.querySelector('.feed__input');
+let currentDot;
+inputAmount.value = 100;
+
+const changeDotClass = () => {
+  dotsCollection.forEach(dot => {
+    dot.firstElementChild.addEventListener('click', event => {
+      dotsCollection.forEach(dot => {
+        if (dot.firstElementChild.classList.contains('active')) {
+          dot.firstElementChild.classList.remove('active');
+        }
+      });
+      let currentDot = event.currentTarget;
+      currentDot.classList.add('active');
+      inputAmount.value = +currentDot.nextElementSibling.innerHTML.slice(1);      
+    });
+  });
+};
+
+inputAmount.addEventListener('input', () => {
+  dotsCollection.forEach(dot => {
+    if(+inputAmount.value === +dot.lastElementChild.innerHTML.slice(1)) {
+      document.querySelector('.active').classList.remove('active');
+      dot.firstElementChild.classList.add('active');
+    };
+  })
+  if (+inputAmount.value > 9999) alert('Exceeded amount!');
+});
+
+changeDotClass()
