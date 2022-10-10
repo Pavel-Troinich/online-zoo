@@ -105,12 +105,17 @@
     /* Pets */
 
 .pets {
-  width: 100%;
+  width: 1340px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
 }
 
 .pets-content {
   position: relative;
-  
+  width: 1160px;
+  overflow: hidden;
+  margin: 0 auto;
 }
 
 .pets-content__arrow {
@@ -120,18 +125,21 @@
   border-radius: 50%;
   background: linear-gradient(113.96deg, #F9804B, #FE9013);
   cursor: pointer;
+  z-index: 10;
 }
 
 .pets-prev {
   position: absolute;
-  top: 404px;
-  left: -82px;
+  top: 424px;
+  left: 20px;
+  z-index: 10;
 }
 
 .pets-next {
   position: absolute;
-  top: 404px;
-  right: -80px;
+  top: 424px;
+  right: 20px;
+  z-index: 10;
 }
 
 .img-arrow {
@@ -146,12 +154,70 @@
 
 .pets-cards {
   display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 872px;
+  margin: 20px auto;
+  position: relative;    
+}
+
+.pets-slider {
+  display: none;
   flex-wrap: wrap;
   width: 1160px;
   height: 872px;
-  margin: 20px auto;
+  margin: 0 auto;
   gap: 20px 30px;
+  animation: 1.5s ease-in-out;
   position: relative;
+  overflow: hidden;
+}
+
+.to-left {
+  animation-name: left;
+}
+
+.from-right {
+  animation-name: right;
+}
+
+.to-right {
+  animation-name: right;
+  animation-direction: reverse;
+}
+
+.from-left {
+  animation-name: left;
+  animation-direction: reverse;
+}
+
+@keyframes left {
+  from {
+    left: 0;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+@keyframes right {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0;
+  }
+}
+
+.active,
+.next {
+  display: flex;
+}
+
+.next {
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
 .pet-cards__card {
@@ -160,7 +226,7 @@
   width: 366px;
   height: 426px;
   border: 1px solid var(--orange);
-  border-radius: 5px;    
+  border-radius: 5px;  
 }
 
 .pet-cards__card:hover .card__img {
@@ -765,12 +831,18 @@ input[type=range]::-moz-range-thumb {
     width: 600px;
     height: 756px;
     margin-top: 0;
-    gap: 92px 30px;
+    /* gap: 92px 30px; */
+    overflow: hidden;
   }
 
   .pet-cards__card {
     width: 285px;
     height: 332px;
+  }
+
+  .pets-slider {
+    height: 756px;
+    gap: 92px 30px;
   }
 
   .card__hidden {
@@ -1027,6 +1099,11 @@ input[type=range]::-moz-range-thumb {
   .pets-cards {
     max-width: 285px;
     height: 1388px;
+    gap: 20px;
+  }
+
+  .pets-slider {
+    /* height: 756px; */
     gap: 20px;
   }
 

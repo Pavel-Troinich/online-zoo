@@ -83,3 +83,237 @@ function openModal(e) {
   }
 };
 
+
+
+// Pets 
+
+const pets = [
+  {
+    name: 'Gorillas',
+    native: 'Congo',
+    img: 'Gorillas.png',
+    food: 'banana-bamboo_icon.png'
+  },
+  {
+    name: 'Giant Pandas',
+    native: 'Southwest China',
+    img: 'Giant_Pandas.png',
+    food: 'banana-bamboo_icon.png'
+  },
+  {
+    name: 'Eagles',
+    native: 'South America',
+    img: 'Eagles.png',
+    food: 'meet-fish_icon.png'
+  },
+  {
+    name: 'Two-toed Sloth',
+    native: 'Mesoamerica',
+    img: 'Two-toed_Sloth.png',
+    food: 'banana-bamboo_icon.png'
+  },
+  {
+    name: 'Cheetahs',
+    native: 'Africa',
+    img: 'cheetahs.png',
+    food: 'meet-fish_icon.png'
+  },
+  {
+    name: 'Penguins',
+    native: 'Antarctica',
+    img: 'Penguins.png',
+    food: 'meet-fish_icon.png'
+  },
+  {
+    name: 'Tiger',
+    native: 'Southeast Asia',
+    img: 'tiger.png',
+    food: 'meet-fish_icon.png'
+  },
+  {
+    name: 'Fox',
+    native: 'Europe',
+    img: 'fox.png',
+    food: 'meet-fish_icon.png'
+  },
+  {
+    name: 'Lynx',
+    native: 'Siberia',
+    img: 'lynx.png',
+    food: 'meet-fish_icon.png'
+  },
+  {
+    name: 'Elephant',
+    native: 'Africa, India',
+    img: 'elefant.png',
+    food: 'banana-bamboo_icon.png'
+  },
+  {
+    name: 'Rabbit',
+    native: 'Everywhere',
+    img: 'rabbit.png',
+    food: 'banana-bamboo_icon.png'
+  },
+  {
+    name: 'Zebra',
+    native: 'Africa',
+    img: 'zebra.png',
+    food: 'banana-bamboo_icon.png'
+  },
+  {
+    name: 'Polar bear',
+    native: 'Arctica',
+    img: 'polar_bear.png',
+    food: 'meet-fish_icon.png'
+  },
+  {
+    name: 'Deer',
+    native: 'Europe',
+    img: 'deer.png',
+    food: 'banana-bamboo_icon.png'
+  },
+];
+
+const petsContainer = document.querySelectorAll('.pets-slider');
+const nextBtn = document.querySelector('.pets-next');
+const prevBtn = document.querySelector('.pets-prev');
+let currentItem = 0;
+let isEnabled = true;
+
+petsContainer.forEach( item => item.innerHTML = renderCards());
+
+
+
+nextBtn.addEventListener('click', function() {
+	if (isEnabled) {
+		nextItem(currentItem);
+	}
+});
+
+prevBtn.addEventListener('click', function() {
+	if (isEnabled) {
+		previousItem(currentItem);
+	}
+});
+
+function changeCurrentItem(n) {
+	currentItem = (n + petsContainer.length) % petsContainer.length;
+};
+
+function hideItem(direction) {
+	isEnabled = false;
+	petsContainer[currentItem].classList.add(direction);
+	petsContainer[currentItem].addEventListener('animationend', function() {
+		this.classList.remove('active', direction);    
+	});
+};
+
+function showItem(direction) {
+	petsContainer[currentItem].classList.add('next', direction);
+	petsContainer[currentItem].addEventListener('animationend', function() {
+		this.classList.remove('next', direction);
+		this.classList.add('active');
+		isEnabled = true;
+    
+	});
+};
+
+function nextItem(n) {
+  hideItem('to-left');
+	changeCurrentItem(n + 1);
+	showItem('from-right');
+  petsContainer.forEach( item => {
+    if(!item.classList.contains('active')) item.innerHTML = renderCards();
+  }); 
+}
+
+function previousItem(n) {
+	hideItem('to-right');
+	changeCurrentItem(n - 1);
+	showItem('from-left'); 
+  petsContainer.forEach( item => {
+    if(!item.classList.contains('active')) item.innerHTML = renderCards();
+  }); 
+}
+
+
+
+function shuffle(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    let j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+};
+
+function renderCards() {
+  let setCards = '';
+  shuffle(pets);
+  
+  if (document.documentElement.clientWidth >= 1000) {
+    for (i=0; i < 6; i++) {
+      const cardHtml = `
+      <div class="pet-cards__card">
+        <img class="card__img" src="../../assets/images/${pets[i].img}" alt="Pet">
+        <div class="card-description">
+          <div>
+            <p class="card-description__name">${pets[i].name}</p>
+            <p class="card-description__native">Native to ${pets[i].native}</p>
+          </div>
+          <div class="card-description__food"><img src="../../assets/icons/${pets[i].food}" alt="food"></div>            
+        </div>
+      </div>
+    `;
+      setCards += cardHtml;
+    }
+  } else if (document.documentElement.clientWidth >= 640) {
+    for (i=0; i < 4; i++) {
+      const cardHtml = `
+      <div class="pet-cards__card">
+        <img class="card__img" src="../../assets/images/${pets[i].img}" alt="Pet">
+        <div class="card-description">
+          <div>
+            <p class="card-description__name">${pets[i].name}</p>
+            <p class="card-description__native">Native to ${pets[i].native}</p>
+          </div>
+          <div class="card-description__food"><img src="../../assets/icons/${pets[i].food}" alt="food"></div>            
+        </div>
+      </div>
+    `;
+      setCards += cardHtml;
+    }
+  }
+
+  return setCards;
+}
+
+
+
+
+
+// function nextSlide() {  
+  //   let step = 0;
+  //   petsWrapper.style.transform = `translateX(${1360*step}px)`;
+  //   step++;
+  
+  //   // petsContainerArr.unshift(petsContainerArr.pop());
+    
+  //   renderCards();
+  // }
+  
+  // function prevSlide() {
+  //   // petsContainerArr[0].style.transform = 'translateX(0)';
+  //   // petsContainerArr[1].style.transform = 'translateX(1360px)';
+  //   // petsContainerArr[2].style.transform = 'translateX(-1360px)';
+  //   // petsContainerArr.unshift(petsContainerArr.pop());
+  //   // console.log(petsContainerArr);
+    
+  //   let step = 0;
+  //   petsWrapper.style.transform = `translateX(${1360*step, step--}px)`;
+  
+  //   petsContainerArr.unshift(petsContainerArr.pop());
+    
+  //   renderCards();
+    
+    
+  // }
+  
