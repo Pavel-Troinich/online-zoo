@@ -892,15 +892,44 @@ input[type=range]::-moz-range-thumb {
   .testimonials-content {
     width: 600px;
     height: max-content;
-    overflow-y: auto;
+    overflow-y: hidden;
     flex-direction: column;
-    gap: 15px;
-    
+    gap: 15px;    
+  }
+
+  .overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 150vh;
+    background: rgba(41, 41, 41, 0.6);
+    z-index: 2;    
   }
 
   .testimonials-card {
     width: 100%;
-    height: 109px;    
+    height: 109px;
+    cursor: pointer;
+  }
+
+  .modal-card {    
+    width: 268px;    
+    margin: 100px auto;
+    background: #F1F3F2;
+    border: 2px solid #E0D8F0;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 15px;
+    z-index: 5;
+  }
+
+  .card-close {
+    text-align: right;    
+  }
+
+  .modal-close {
+    cursor: pointer;
   }
 
   .testimonials-bar {
