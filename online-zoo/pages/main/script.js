@@ -25,7 +25,6 @@ function closeBurger() {
   shadow.removeEventListener('click', closeBurger);
 }
 
-
 // Testimonials slider
 
 const slider = document.querySelector('.testimonials__slider');
@@ -182,8 +181,6 @@ let isEnabled = true;
 
 petsContainer.forEach( item => item.innerHTML = renderCards());
 
-
-
 nextBtn.addEventListener('click', function() {
 	if (isEnabled) {
 		nextItem(currentItem);
@@ -236,8 +233,6 @@ function previousItem(n) {
   }); 
 }
 
-
-
 function shuffle(array) {
   for (let i = array.length - 1; i > 0; i--) {
     let j = Math.floor(Math.random() * (i + 1));
@@ -285,35 +280,3 @@ function renderCards() {
 
   return setCards;
 }
-
-
-
-
-
-// function nextSlide() {  
-  //   let step = 0;
-  //   petsWrapper.style.transform = `translateX(${1360*step}px)`;
-  //   step++;
-  
-  //   // petsContainerArr.unshift(petsContainerArr.pop());
-    
-  //   renderCards();
-  // }
-  
-  // function prevSlide() {
-  //   // petsContainerArr[0].style.transform = 'translateX(0)';
-  //   // petsContainerArr[1].style.transform = 'translateX(1360px)';
-  //   // petsContainerArr[2].style.transform = 'translateX(-1360px)';
-  //   // petsContainerArr.unshift(petsContainerArr.pop());
-  //   // console.log(petsContainerArr);
-    
-  //   let step = 0;
-  //   petsWrapper.style.transform = `translateX(${1360*step, step--}px)`;
-  
-  //   petsContainerArr.unshift(petsContainerArr.pop());
-    
-  //   renderCards();
-    
-    
-  // }
-  

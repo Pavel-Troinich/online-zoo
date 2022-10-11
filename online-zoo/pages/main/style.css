@@ -4,7 +4,6 @@
 @import url(../../assets/styles/header.css);
 @import url(../../assets/styles/footer.css);
 
-
       /* Header */
 
 .header-content__wrapper {  
@@ -238,8 +237,7 @@
   transform: translateY(-49px) scale(1.07);
   border-radius: 5px;
   background: rgb(0, 0, 0, 0.5);
-  color: #ffffff;
-  
+  color: #ffffff;  
 }
 
 .card__img {  
@@ -563,7 +561,6 @@ input[type=range]::-moz-range-thumb {
     bottom: 0px;
     background: url(../../assets/images/palm_foto_small.png);    
   }
-
 }
 
 @media (max-width: 1350px) {
@@ -601,9 +598,7 @@ input[type=range]::-moz-range-thumb {
   .pet-cards__card:hover .card-description {
     transform: translateY(-52px) scale(1.07);
     border-radius: 5px;
-  }
-
-  
+  }  
 }
 
 @media (max-width: 1220px) {
@@ -649,7 +644,6 @@ input[type=range]::-moz-range-thumb {
     margin-top: -10px;
     padding-left: 10px;    
   }
-
   
       /* Pick and feed a friend */
 
@@ -737,7 +731,6 @@ input[type=range]::-moz-range-thumb {
   .testimonials__btn {
     margin-top: 22px; 
   }
-
 }
 
 
@@ -941,7 +934,6 @@ input[type=range]::-moz-range-thumb {
     top: -16px;
     left: 167px;
     z-index: 3;
-
   }
 
   .second-arrow {
@@ -1097,7 +1089,6 @@ input[type=range]::-moz-range-thumb {
     right: -72px;
     top: 39px;
   }
-
   
       /* Pets */
 
@@ -1264,5 +1255,3 @@ input[type=range]::-moz-range-thumb {
     right: -5px;
   }
 }
-
-
