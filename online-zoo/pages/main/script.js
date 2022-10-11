@@ -265,7 +265,7 @@ function renderCards() {
     `;
       setCards += cardHtml;
     }
-  } else if (document.documentElement.clientWidth >= 640) {
+  } else {
     for (i=0; i < 4; i++) {
       const cardHtml = `
       <div class="pet-cards__card">
