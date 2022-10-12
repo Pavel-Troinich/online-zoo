@@ -32,6 +32,7 @@ const inputAmount = document.querySelector('.feed__input');
 let currentDot;
 inputAmount.value = 100;
 
+
 const changeDotClass = () => {
   dotsCollection.forEach(dot => {
     dot.firstElementChild.addEventListener('click', event => {
@@ -47,14 +48,22 @@ const changeDotClass = () => {
   });
 };
 
-inputAmount.addEventListener('input', () => {
+inputAmount.addEventListener('input', () => { 
+  let currentActive = document.querySelector('.active');
+  if (currentActive) {
+      currentActive.classList.remove('active');
+  } 
   dotsCollection.forEach(dot => {
-    if(+inputAmount.value === +dot.lastElementChild.innerHTML.slice(1)) {
-      document.querySelector('.active').classList.remove('active');
+    if(+inputAmount.value === +dot.lastElementChild.innerHTML.slice(1)) {      
       dot.firstElementChild.classList.add('active');
-    };
+    } else {        
+      console.log(inputAmount.value);
+    }
   })
-  if (+inputAmount.value > 9999) alert('Exceeded amount!');
+  if (+inputAmount.value > 9999) {
+    inputAmount.value = inputAmount.value.slice(0, 4);
+    alert('Exceeded amount!');
+  }
 });
 
-changeDotClass()
+changeDotClass();
